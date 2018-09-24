@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """
-Scrits to read signals from Arduino and convert into steering and angle outputs
+Scrits to read signals from Arduino and convert into steering and throttle outputs
 Arduino input signal range: 0 to 200
 Output range: -1.00 to 1.00
 """

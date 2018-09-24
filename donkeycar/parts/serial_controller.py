@@ -26,6 +26,11 @@ class SerialController:
                 if output[0].isnumeric() and output[1].isnumeric():
                     self.angle = (float(output[0])-100)/100
                     self.throttle = (float(output[1])-100)/100
+                    if self.throttle > 0.01:
+                        self.recording = True
+                        print("Recording")
+                    else:
+                        self.recording = False
                     time.sleep(0.01)
 
     def run(self):

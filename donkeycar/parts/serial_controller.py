@@ -18,6 +18,7 @@ class SerialController:
         self.recording = False
         self.serial = serial.Serial('/dev/ttyACM0', 9600, timeout=1) #Serial port - laptop: 'COM3', Arduino: '/dev/ttyACM0'
 
+
     def update(self):
         while True:
             line = str(self.serial.readline())[2:-5]
